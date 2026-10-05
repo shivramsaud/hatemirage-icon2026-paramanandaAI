@@ -1,0 +1,13 @@
+transformers>=4.44
+accelerate
+peft
+trl
+bitsandbytes
+datasets>=2.20
+sentence-transformers
+rouge-score
+faiss-cpu
+huggingface_hub
+pandas
+scikit-learn
+openpyxl
