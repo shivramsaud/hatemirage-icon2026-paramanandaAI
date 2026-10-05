@@ -20,15 +20,16 @@ Both tracks beat every official zero-shot baseline on Intent and Implication and
 
 ## Repo layout
 ```
-notebooks/  Kaggle pipeline notebooks (setup/data/RAG/resume cells exact; token redacted to
-            hf_YOUR_TOKEN_HERE — add a real HF_TOKEN Kaggle Secret to run)
+notebooks/  Pipeline notebooks: setup/data/RAG/resume cells exact (token redacted to
+            hf_YOUR_TOKEN_HERE); trainer duplicated from src/; inference/eval/submission
+            cells summarized (full validated logic ran green on Kaggle — see run links below)
 src/        train_ddp.py (DDP QLoRA trainer, torchrun 2xT4), eval_local.py (SBERT+ROUGE-L scorer)
 prompts/    parts.json (FINAL v2 prompt, organizers' wording) + final_prompt.md (rationale)
 outputs/    phi/, qwen/: metrics.json (verified val scores)
 paper/      main.tex + references.bib (ACL short paper, compiles with the official ACL template)
 ```
-Full run artifacts (906-row `submission_taskA/B.csv`, `submission_official.xlsx`, val preds,
-adapters, telemetry): Kaggle kernel outputs (`shivramsaud/hatemirage-phi3-resume26`,
+Full run artifacts — 906-row `submission_taskA/B.csv`, `submission_official.xlsx`, val preds,
+adapters, telemetry: Kaggle kernel outputs (`shivramsaud/hatemirage-phi3-resume26`,
 `thenepaliguy/hatemirage-qwen25-qlora`) + Hub (`ShivRamSaud/hatemirage-phi3-qlora`,
 `ShivRamSaud/hatemirage-qwen25-qlora`).
 
