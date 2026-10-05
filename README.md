@@ -17,20 +17,23 @@ Dataset paper (LREC 2026): [arXiv:2603.02684](https://arxiv.org/abs/2603.02684)
 | Official best zero-shot (Phi-3 / Mistral) | 65.6 / 50.4 | 61.1 / 29.5 | 55.6 / 17.4 | — |
 
 Both tracks beat every official zero-shot baseline on Intent and Implication and match the best Target.
-`outputs/<phi|qwen>/` holds the scored validation predictions plus the 906-row Evaluation-phase
-submissions (`submission_taskA.csv`, `submission_taskB.csv`).
 
 ## Repo layout
 ```
-notebooks/  HateMirage_Phi3_2xT4_QLoRA.ipynb, HateMirage_Qwen25_7B_QLoRA.ipynb (as run on Kaggle)
+notebooks/  Kaggle pipeline notebooks (setup/data/RAG/resume cells exact; token redacted to
+            hf_YOUR_TOKEN_HERE — add a real HF_TOKEN Kaggle Secret to run)
 src/        train_ddp.py (DDP QLoRA trainer, torchrun 2xT4), eval_local.py (SBERT+ROUGE-L scorer)
 prompts/    parts.json (FINAL v2 prompt, organizers' wording) + final_prompt.md (rationale)
-outputs/    phi/, qwen/: metrics.json, preds_val.csv, submission_taskA/B.csv, raw_outputs_val.jsonl
+outputs/    phi/, qwen/: metrics.json (verified val scores)
 paper/      main.tex + references.bib (ACL short paper, compiles with the official ACL template)
 ```
+Full run artifacts (906-row `submission_taskA/B.csv`, `submission_official.xlsx`, val preds,
+adapters, telemetry): Kaggle kernel outputs (`shivramsaud/hatemirage-phi3-resume26`,
+`thenepaliguy/hatemirage-qwen25-qlora`) + Hub (`ShivRamSaud/hatemirage-phi3-qlora`,
+`ShivRamSaud/hatemirage-qwen25-qlora`).
 
 ## Reproduce (Kaggle, GPU T4 x2, Internet ON)
-1. Upload a notebook, add Kaggle Secret `HF_TOKEN` (needs Phi/Qwen access; no secret needed for smoke test).
+1. Upload a notebook, add Kaggle Secret `HF_TOKEN` (needs Phi/Qwen access).
 2. Official task data + RAG refs download automatically from the organizers' GitHub
    (`Development Phase/Train.xlsx`, `Evaluation Phase/*`, `Starter-Kit/source_docs/`).
 3. Run top to bottom: DDP QLoRA (`torchrun --nproc_per_node=2`) → Hub sync → greedy inference →
