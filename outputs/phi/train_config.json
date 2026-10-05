@@ -1,0 +1,18 @@
+{
+  "model_id": "microsoft/Phi-3-mini-128k-instruct",
+  "hub_id": "ShivRamSaud/hatemirage-phi3-qlora",
+  "train_csv": "/kaggle/working/hatemirage_out/train_norm.csv",
+  "val_csv": "/kaggle/working/hatemirage_out/val_norm.csv",
+  "output_dir": "/kaggle/working/hatemirage_out/ckpt",
+  "with_rag": true,
+  "epochs": 3,
+  "bs": 2,
+  "grad_accum": 8,
+  "lora_r": 64,
+  "eval_steps": 200,
+  "save_steps": 200,
+  "max_seq": 1536,
+  "max_runtime_h": 8.2,
+  "resume_ckpt": "/root/.cache/huggingface/hub/models--ShivRamSaud--hatemirage-phi3-qlora/snapshots/8f322416af4f7f02607d2df446da260f6337f5d1/checkpoint-400",
+  "warm_adapter": "/root/.cache/huggingface/hub/models--ShivRamSaud--hatemirage-phi3-qlora/snapshots/8f322416af4f7f02607d2df446da260f6337f5d1/checkpoint-400"
+}

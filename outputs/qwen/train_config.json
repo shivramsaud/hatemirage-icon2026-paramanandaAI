@@ -1,0 +1,18 @@
+{
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "hub_id": "ShivRamSaud/hatemirage-qwen25-qlora",
+  "train_csv": "/kaggle/working/hatemirage_out/train_norm.csv",
+  "val_csv": "/kaggle/working/hatemirage_out/val_norm.csv",
+  "output_dir": "/kaggle/working/hatemirage_out/ckpt",
+  "with_rag": true,
+  "epochs": 3,
+  "bs": 1,
+  "grad_accum": 16,
+  "lora_r": 64,
+  "eval_steps": 200,
+  "save_steps": 200,
+  "max_seq": 1536,
+  "max_runtime_h": 8.2,
+  "resume_ckpt": "/root/.cache/huggingface/hub/models--ShivRamSaud--hatemirage-qwen25-qlora/snapshots/a0b462b037f0815d243f6f439ceb3336152a6b25/checkpoint-200",
+  "warm_adapter": "/root/.cache/huggingface/hub/models--ShivRamSaud--hatemirage-qwen25-qlora/snapshots/a0b462b037f0815d243f6f439ceb3336152a6b25/checkpoint-200"
+}

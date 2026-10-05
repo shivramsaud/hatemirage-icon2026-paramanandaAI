@@ -1,0 +1,46 @@
+
+trainer.train failed: 'TrainerState' object has no attribute 'save_model'
+Traceback (most recent call last):
+  File "/kaggle/working/src/train_ddp.py", line 183, in main
+    trainer.train(resume_from_checkpoint=_resume)
+  File "/usr/local/lib/python3.12/dist-packages/transformers/trainer.py", line 1520, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/trainer.py", line 1602, in _inner_training_loop
+    self._run_epoch(
+  File "/usr/local/lib/python3.12/dist-packages/transformers/trainer.py", line 1882, in _run_epoch
+    self.control = self.callback_handler.on_step_end(self.args, self.state, self.control)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/trainer_callback.py", line 520, in on_step_end
+    return self.call_event("on_step_end", args, state, control, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/trainer_callback.py", line 545, in call_event
+    result = getattr(callback, event)(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kaggle/working/src/train_ddp.py", line 144, in on_step_end
+    _s.save_model(cfg["output_dir"])
+    ^^^^^^^^^^^^^
+AttributeError: 'TrainerState' object has no attribute 'save_model'
+
+trainer.train failed: 'TrainerState' object has no attribute 'save_model'
+Traceback (most recent call last):
+  File "/kaggle/working/src/train_ddp.py", line 183, in main
+    trainer.train(resume_from_checkpoint=_resume)
+  File "/usr/local/lib/python3.12/dist-packages/transformers/trainer.py", line 1520, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/trainer.py", line 1602, in _inner_training_loop
+    self._run_epoch(
+  File "/usr/local/lib/python3.12/dist-packages/transformers/trainer.py", line 1882, in _run_epoch
+    self.control = self.callback_handler.on_step_end(self.args, self.state, self.control)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/trainer_callback.py", line 520, in on_step_end
+    return self.call_event("on_step_end", args, state, control, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/trainer_callback.py", line 545, in call_event
+    result = getattr(callback, event)(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kaggle/working/src/train_ddp.py", line 144, in on_step_end
+    _s.save_model(cfg["output_dir"])
+    ^^^^^^^^^^^^^
+AttributeError: 'TrainerState' object has no attribute 'save_model'

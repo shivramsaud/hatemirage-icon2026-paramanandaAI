@@ -1,0 +1,26 @@
+total 8620
+drwxr-xr-x 4 root root    4096 Oct  5 09:27 .
+drwxr-xr-x 4 root root    4096 Oct  5 01:13 ..
+drwxr-xr-x 3 root root    4096 Oct  5 09:27 ckpt
+-rw-r--r-- 1 root root       0 Oct  5 09:27 ckpt_listing.txt
+-rw-r--r-- 1 root root   93590 Oct  5 09:27 ddp.log
+-rw-r--r-- 1 root root  669298 Oct  5 01:13 devval_norm.csv
+drwxr-xr-x 2 root root    4096 Oct  5 01:12 official
+-rw-r--r-- 1 root root  506925 Oct  5 01:12 rag_index.faiss
+-rw-r--r-- 1 root root   42912 Oct  5 01:12 rag_passages.json
+-rw-r--r-- 1 root root 1338609 Oct  5 01:13 test_norm.csv
+-rw-r--r-- 1 root root     762 Oct  5 01:14 train_config.json
+-rw-r--r-- 1 root root 5372205 Oct  5 01:13 train_norm.csv
+-rw-r--r-- 1 root root  769896 Oct  5 01:13 val_norm.csv
+total 642032
+drwxr-xr-x 3 root root      4096 Oct  5 09:27 .
+drwxr-xr-x 4 root root      4096 Oct  5 09:27 ..
+-rw-r--r-- 1 root root      1180 Oct  5 09:27 adapter_config.json
+-rw------- 1 root root 645975704 Oct  5 09:27 adapter_model.safetensors
+-rw-r--r-- 1 root root      2507 Oct  5 09:27 chat_template.jinja
+drwxr-xr-x 2 root root      4096 Oct  5 08:38 checkpoint-200
+-rw-r--r-- 1 root root      1467 Oct  5 09:27 README.md
+-rw-r--r-- 1 root root       127 Oct  5 01:16 RESUME_INFO.json
+-rw-r--r-- 1 root root       694 Oct  5 09:27 tokenizer_config.json
+-rw-r--r-- 1 root root  11421892 Oct  5 09:27 tokenizer.json
+-rw-r--r-- 1 root root      5713 Oct  5 09:27 training_args.bin

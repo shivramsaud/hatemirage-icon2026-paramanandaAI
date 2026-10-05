@@ -1,0 +1,8 @@
+{
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "lora_r": 64,
+ "n_train": 9486,
+ "epochs": 3,
+ "eff_batch": 32,
+ "max_steps": 889
+}

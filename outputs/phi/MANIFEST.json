@@ -1,0 +1,159 @@
+{
+ "metrics.json": {
+  "sha256": "7542e1b651bf0e8c01c76b69e97470dad51b6e8c6a3671db31fc4a0ef60ef978",
+  "size": 381,
+  "provenance": "kaggle+hub-identical"
+ },
+ "preds_val.csv": {
+  "sha256": "31df238b5023dcfd766a82a2a1d275fd32b85e8ae454f36722e803d1c0513018",
+  "size": 194267,
+  "provenance": "kaggle+hub-identical"
+ },
+ "preds_test.csv": {
+  "sha256": "a99aee0073fba6645ce9290eca855b26b6f14f5af3cdad9dfd9adcb5907c3f70",
+  "size": 383796,
+  "provenance": "kaggle"
+ },
+ "raw_outputs_val.jsonl": {
+  "sha256": "c7caaafadf9df6d93429c879e51e9823fb7c6a5a9586f61d861e7942cfca8204",
+  "size": 235385,
+  "provenance": "kaggle"
+ },
+ "raw_outputs_test.jsonl": {
+  "sha256": "e6b9107249e7904bdd8c4afa9481b78acadbc4c0c96dcb160b1ac8dd056e8fb7",
+  "size": 461639,
+  "provenance": "kaggle+hub-identical"
+ },
+ "submission_official.xlsx": {
+  "sha256": "11a8ae77646f048eb7a66c5504a7d06d6aec8f55a0c0f4f400f706f5ffcdd903",
+  "size": 143748,
+  "provenance": "kaggle+hub-identical"
+ },
+ "submission_taskA.csv": {
+  "sha256": "b2e733c03c154656c739bbe23979f999bcd0cf6e4595ee3bb45b3be7e1857789",
+  "size": 18063,
+  "provenance": "kaggle"
+ },
+ "submission_taskA.zip": {
+  "sha256": "b872655020c9ac5822b19cf85ce075eeb12d678e4d4b004d213319de6c564858",
+  "size": 4971,
+  "provenance": "kaggle+hub-identical"
+ },
+ "submission_taskB.csv": {
+  "sha256": "89d17f44ed25a4a64bf53c76cf44cda56fd060c3bd7e495525d838fb09bd172f",
+  "size": 199311,
+  "provenance": "kaggle"
+ },
+ "submission_taskB.zip": {
+  "sha256": "69458798cb75f832323ba3de2f74af3295c35be4826eecda913183b7ed79bb5f",
+  "size": 35353,
+  "provenance": "kaggle+hub-identical"
+ },
+ "stages.txt": {
+  "sha256": "992bdbb5871bfb28c37062ce6a97158ca1d72ce5f0f3727c7c9c87fe501f5c1b",
+  "size": 275,
+  "provenance": "kaggle"
+ },
+ "train_config.json": {
+  "sha256": "4bcea2c4fa218804e1bf7dd6846088ad14190e403f95eb83836062270a4991a1",
+  "size": 765,
+  "provenance": "kaggle"
+ },
+ "ckpt_listing.txt": {
+  "sha256": "6d2ddfe3fc057bb2f5970b04fc38c70f1e91e65913c74ccc5fbb21bfd807938a",
+  "size": 1424,
+  "provenance": "kaggle"
+ },
+ "hub_diag.json": {
+  "sha256": "55062c48bdaa66809de7b650764fa63c28c3a37cc3a16c073955dac2f084e50c",
+  "size": 75,
+  "provenance": "kaggle"
+ },
+ "sbert.png": {
+  "sha256": "ded34c479d828c87578776c92eda8a3e34109f6493ff014b8c4143e6370e9692",
+  "size": 11144,
+  "provenance": "kaggle"
+ },
+ "rougeL.png": {
+  "sha256": "94b63c4c8357bce08a9643c9c704230ae1e6adc008337f4e769d587832741d25",
+  "size": 8875,
+  "provenance": "kaggle"
+ },
+ "hatemirage-phi3-resume26.log": {
+  "sha256": "399f99069ea34ca74fc2f3cf048b43dd7f81c3df779b537de5f5aee27ee308e1",
+  "size": 168681,
+  "provenance": "kaggle-kernel-log"
+ },
+ "RESUME_INFO.json": {
+  "sha256": "baffa9f30dd5fce45c2348c7b9a038bd502897c1b207072bd51d6c17a5048fca",
+  "size": 137,
+  "provenance": "hub-only"
+ },
+ "TRAIN_ERROR.txt": {
+  "sha256": "0471140a217f68bee2ad0b69dce2a2cd5bab2be9fc4b9f06c92ac197f9dacc6c",
+  "size": 2840,
+  "provenance": "hub-only"
+ },
+ "train_done.json": {
+  "sha256": "6d00081d91a6ee11ccdbbf752eb8720e77232a308b2c95707c3914b9456cbe51",
+  "size": 81,
+  "provenance": "hub-only"
+ },
+ "training_args.bin": {
+  "sha256": "b62d38258a71a925c2e8f9bd4d6f18494a4be05daeaffbe338163fc30dcf510f",
+  "size": 5713,
+  "provenance": "hub-only"
+ },
+ "_large_artifacts_not_in_git": {
+  "train_norm.csv": {
+   "sha256": "5aae7e5b336cc203051bc51645965a4966b7107048a5f21fdfe765d7ac8eed6e",
+   "size": 5372205,
+   "lives_on": "kaggle-kernel-output"
+  },
+  "val_norm.csv": {
+   "sha256": "2b8bcaead19a9f5e02056c2f26e470e7abbbf60faade825e380d4d6ec8a01afd",
+   "size": 769896,
+   "lives_on": "kaggle-kernel-output"
+  },
+  "test_norm.csv": {
+   "sha256": "d8c47a491d2a5ebbe0b0e06df3eb0f16280653bd03c7252eb03c9982adf44212",
+   "size": 1338609,
+   "lives_on": "kaggle-kernel-output"
+  },
+  "devval_norm.csv": {
+   "sha256": "3ac0ac8187f896957954110b590dc169479d24ea3e03390689e934e0d4b1c012",
+   "size": 669298,
+   "lives_on": "kaggle-kernel-output"
+  },
+  "rag_index.faiss": {
+   "sha256": "4ed394fd99f2383f2966a4ad7cfd0e80b7100b5fcdcb7da2d323b5493b544cd2",
+   "size": 506925,
+   "lives_on": "kaggle-kernel-output"
+  },
+  "rag_passages.json": {
+   "sha256": "ca3c81acc10728649cefca6deae4c3ab0c967fdac49d2030601eaa9af7f739b9",
+   "size": 42912,
+   "lives_on": "kaggle-kernel-output"
+  },
+  "ckpt/adapter_model.safetensors": {
+   "sha256": "dae91f2786fcd663b5b50c83f8db5d10f00d44b645b71c6c828498512bc70c98",
+   "size": 142623480,
+   "lives_on": "kaggle-kernel-output + hub"
+  },
+  "ckpt/adapter_config.json": {
+   "sha256": "a882f56d4162d6bfd5f3eb4c093cfbde7c073e5611c409886d879e4e5648b41c",
+   "size": 1190,
+   "lives_on": "kaggle-kernel-output + hub"
+  },
+  "ckpt/chat_template.jinja": {
+   "sha256": "dcaee66df77bfbb789ec541fe713218da30225a526f1db97138fc39ee6dc56aa",
+   "size": 407,
+   "lives_on": "kaggle-kernel-output + hub"
+  },
+  "ddp.log": {
+   "sha256": "e75a7ec2aa5ac430dd49f5cad272477f2c25d848d1f7d0feefc80475b6e4bf62",
+   "size": 109708,
+   "lives_on": "kaggle-kernel-output"
+  }
+ }
+}
